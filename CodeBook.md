@@ -1,11 +1,17 @@
 # Code book
 
-## subject	
+## subject
+An integer taking values in {a,2,3, ... , 30}. Each of these integers represents a subject (person) of the experiment. 
+
 ## activity	
+A factor with 6 levels:  WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+
 ## tBodyAcc-mean()-X
 Note 1: Each of the variables, from here on, is the average of the corresponding variable for the suject-activity pair. 
 Note 2: Accelerometer => 3-axial linear acceleration data (Acc) : "Body" and "Gravity" motions separated (by filtering using a Butterworth low-pass filter) , t and f show the time and frequency domain data. X and Y and Z show different axial data. And finally "mean()" and "std()" show mean value and standard deviation respectively.
         Gyroscope => 3-axial angular velocity data 
+        
+        With Notes 1 and 2 in mind all the variable names from here on could be decoded. Some examples are given.
 In this case: The mean of time domain X axis component of body acceleration AVERAGED OVER all data for each subject-activity pair.
 
 ## tBodyAcc-mean()-Y	
