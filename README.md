@@ -16,7 +16,9 @@ Note: There were 13 more measurements which had the word "mean" somewhere in the
 The activity labels in y_merged are converted to factor, and their levels are changed to the second column of activity labels, which contains the descriptive namesof activities.
 
 # Step 4:
-Appropriately labels the data set with descriptive variable names. This is done by 
+Appropriately labels the data set with descriptive variable names. This is done by replacing column names with the second column of the features dataframe, which is a factor vector.
+
+Finally all subjects, labeles, and X_merged data are merged into one dataset. And the column names are adjusted a bit (where there were BodyBody in the names, it is replaced with one Body) and subject and activity column names are adjusted too.
 
 #Step 5:
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
